@@ -1,0 +1,11 @@
+GET http://localhost:3000/api/classes 
+
+###
+POST http://localhost:3000/api/classes/create 
+Content-Type: application/json
+
+{
+    "name":"Zoomba"
+    
+}
+
