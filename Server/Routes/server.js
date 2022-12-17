@@ -6,6 +6,7 @@ const prisma = new PrismaClient()
 
 // Show all classes
 router.get('/classes', async (req, res, next) => {
+    console.log("Classes was hit")
     try {
         const classes = await prisma.classes.findMany({
             include: { category: true},
